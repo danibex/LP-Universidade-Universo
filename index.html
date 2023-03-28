@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Universo Salvador</title>
+        <link rel="icon" href="https://universo.edu.br/wp-content/themes/universo/images/icons/favicon.ico">
+    <script src="./jquery-3.6.4.min.js"></script>
+    <script src="./bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    </head>
+<body class="bg-body-secondary">
+<!--Menu de navegação-->  
+  <nav class="navbar navbar-expand-sm bg-body-secondary fixed-top">
+    <div class="container-fluid mx-2">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="./logo.png" alt="" width="60px">Universo</a>
+    </div>
+    <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cursos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contato</a>
+        </li>
+       </ul>
+    </div>
+  </nav>
+
+<!--Heros-->
+<div class="container col-xxl-8 px-4 py-5 bg-light">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
+      <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Filtro de pesquisa-->
+<div class="mt-5">
+  <div class="d-flex justify-content-center align-items-center mt-5">
+    <button class="btn btn-primary mt-5 mx-2" type="submit" id="btn-todos">Todos</button>
+    <button class="btn btn-primary mt-5 mx-2" type="submit" id="btn-presencial">Presenciais</button>
+    <button class="btn btn-primary mt-5 mx-2" type="submit" id="btn-ead">EAD</button>
+  </div>
+</div>
+<!--Cards dos cursos-->
+<div class="container text-center mt-4">
+  <div class="row">
+    <div class="col d-flex justify-content-center align-items-center presencial">
+      <div class="card my-3  presencial" style="width: 18rem;">
+        <img src="./direito.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Direito</h5>
+          <p class="card-text">Forma profissionais capazes de pensar autonomamente e traduzir a missão social dos operadores do Direito. O curso conta com o estágio, conduzido pelo Núcleo de Prática Jurídica (NPJ) nos quatro últimos períodos.</p>
+          <div class="d-flex">
+          <a href="#" class="btn btn-success mx-1">Cursar</a>
+          <a href="http://gradecurricular.universo.edu.br/19_206AN.pdf" target="_blank" class="btn btn-warning mx-1">Grade Curricular</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex justify-content-center align-items-center presencial">
+      <div class="card my-3 presencial" style="width: 18rem;">
+        <img src="./enfermagem.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Enfermagem</h5>
+          <p class="card-text">Forma profissionais aptos a atuarem na administração de unidades hospitalares, unidades básicas de saúde, núcleos de reabilitação e clínicas integradas.</p>
+          <div class="d-flex">
+            <a href="#" class="btn btn-success mx-1">Cursar</a>
+            <a href="http://gradecurricular.universo.edu.br/19_306AN.pdf" target="_blank" class="btn btn-warning mx-1">Grade Curricular</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex justify-content-center align-items-center presencial">
+      <div class="card my-3 presencial" style="width: 18rem;">
+        <img src="./fisioterapia.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fisioterapia</h5>
+          <p class="card-text">Forma profissionais para atuar em programas de promoção, prevenção, proteção e recuperação da saúde, encarando o paciente como um todo indissolúvel, no sentido físicoe e emocional.</p>
+          <div class="d-flex">
+            <a href="#" class="btn btn-success mx-1">Cursar</a>
+            <a href="http://gradecurricular.universo.edu.br/19_303AN.pdf" target="_blank" class="btn btn-warning mx-1">Grade Curricular</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col d-flex justify-content-center align-items-center presencial">
+      <div class="card my-3 presencial" style="width: 18rem;">
+        <img src="./odontologia.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Odontologia</h5>
+          <p class="card-text">O curso de Odontologia tem como fundamentação as atuais necessidades sociais, os avanços humanísticos, científicos e tecnológicos. Preconiza recentes recomendações dos órgãos nacionais e internacionais de saúde.</p>
+          <div class="d-flex">
+          <a href="#" class="btn btn-success mx-1">Cursar</a>
+          <a href="http://gradecurricular.universo.edu.br/19_309AN.pdf" target="_blank" class="btn btn-warning mx-1">Grade Curricular</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex justify-content-center align-items-center presencial">
+      <div class="card my-3 presencial" style="width: 18rem;">
+        <img src="./psicologia.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Psicologia</h5>
+          <p class="card-text">A psicologia é uma ciência que trata do ser humano numa perspectiva biopsicossocial, interagindo com vários campos de saber e práticas sociais. Por isso, precisa estar atualizada em relação às inovações científicas e a sociedade contemporânea.</p>
+          <div class="d-flex">
+            <a href="#" class="btn btn-success mx-1">Cursar</a>
+            <a href="http://gradecurricular.universo.edu.br/19_310AN.pdf" target="_blank" class="btn btn-warning mx-1">Grade Curricular</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col d-flex justify-content-center align-items-center ead">
+      <div class="card my-3 ead" style="width: 18rem;">
+        <img src="./administracao.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Administração</h5>
+          <p class="card-text">O curso de Administração tem o objetivo de capacitar os alunos para atuar de forma transformadora sobre as organizações e a realidade social. Formamos um perfil administrador que sabe atuar no planejamento, na gestão, na organização e no controle das empresas.</p>
+          <div class="d-flex">
+            <a href="#" class="btn btn-success mx-1">Cursar</a>
+            <a href="http://gradecurricular.universo.edu.br/103_201AN.pdf" target="_blank" class="btn btn-warning mx-1">Grade Curricular</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex justify-content-center align-items-center ead">
+      <div class="card my-3 ead" style="width: 18rem;">
+        <img src="./odontologia.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Análise e Desenvolvimento de Sistemas</h5>
+          <p class="card-text">O curso de Odontologia tem como fundamentação as atuais necessidades sociais, os avanços humanísticos, científicos e tecnológicos. Preconiza recentes recomendações dos órgãos nacionais e internacionais de saúde.</p>
+          <div class="d-flex">
+          <a href="#" class="btn btn-success mx-1">Cursar</a>
+          <a href="http://gradecurricular.universo.edu.br/19_309AN.pdf" target="_blank" class="btn btn-warning mx-1">Grade Curricular</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$("#btn-ead").click(function (e) {
+ e.preventDefault()
+ $('.presencial').fadeOut(100)
+ $(".ead").fadeIn(100)
+ $("")
+});
+
+$("#btn-presencial").click(function (e) {
+ e.preventDefault()
+ $(".ead").fadeOut(100)
+ $(".presencial").fadeIn(100)
+});
+$('#btn-todos').click(function(e) {
+  e.preventDefault()
+  $(".presencial").fadeIn(100)
+  $(".ead").fadeIn(100)
+})
+
+</script>
+</body>
+</html>
