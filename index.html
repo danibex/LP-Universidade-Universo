@@ -9,6 +9,7 @@
     <script src="./js/jquery-3.6.4.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
     </head>
 <body class="bg-body-secondary">
 <!--Menu de navegação-->  
@@ -22,10 +23,10 @@
     <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Início</a>
+          <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Cursos</a>
+          <a class="nav-link" href="#cursos">Cursos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contato</a>
@@ -35,7 +36,7 @@
   </nav>
 
 <!--Heros-->
-<div class="container col-xxl-8 px-4 py-5 bg-light">
+<div class="container col-xxl-8 px-4 py-5 bg-light" id="inicio">
   <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
     <div class="col-10 col-sm-8 col-lg-6">
       <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
@@ -50,7 +51,7 @@
     </div>
   </div>
 </div>
-
+<div id="cursos"></div>
 <!--Filtro de pesquisa-->
 <div class="mt-5">
   <div class="d-flex justify-content-center align-items-center mt-5">
@@ -161,26 +162,6 @@
     </div>
   </div>
 </div>
-
-<script>
-$("#btn-ead").click(function (e) {
- e.preventDefault()
- $('.presencial').fadeOut(600)
- $(".ead").fadeIn(600)
- $("")
-});
-
-$("#btn-presencial").click(function (e) {
- e.preventDefault()
- $(".ead").fadeOut(600)
- $(".presencial").fadeIn(600)
-});
-$('#btn-todos').click(function(e) {
-  e.preventDefault()
-  $(".presencial").fadeIn(600)
-  $(".ead").fadeIn(600)
-})
-
-</script>
+<script src="./js/gridCourses.js"></script>
 </body>
 </html>
