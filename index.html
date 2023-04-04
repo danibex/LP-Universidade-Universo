@@ -18,7 +18,7 @@
       <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="" width="70px"></a>
+      <a class="navbar-brand" href="https://universo.edu.br/universo/" target="_blank"><img src="./img/logo.png" alt="" width="70px"></a>
     </div>
     <div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -45,7 +45,7 @@
        </ul>
     </div>
   </nav>
-<div class="coringa mx-5 my-5"></div>
+<div class="mx-5 my-5"></div>
 <!--Heros-->
 <div class="container col-xxl-8 px-4 py-5 bg-light rounded mt-5 pb-0 border border-danger-subtle"> 
   <div class="row flex-lg-row-reverse align-items-sm-center g-5 py-5 d-flex align-items-center justify-content-center">
@@ -178,9 +178,87 @@
   </div>
 </div>
 <div id="contato"></div>
+
+
 <!--Formulário de contato-->
+<!--Em Desenvolvimento-->
+<!--
+<footer>
+  <div class="container">
+      <div class="row end">
+          <form id="contact-footer" class="col-md-6 col-sm-12 mt-4 mb-4">
 
+              <h1>Entre em contato conosco</h1>
+              <div class="row mt-20">
+                  <div class="col">
+                      <input class="form-control form-control-lg" maxlength="200" type="text" id="nome-contact-footer" placeholder="Nome">
+                  </div>
+              </div>
+              <div class="row mt-10">
+                  <div class="col">
+                      <input type="text" class="form-control form-control-lg" placeholder="E-mail" id="email-contact-footer">
+                  </div>
+              </div>
+              <div class="row mt-10">
+                  <div class="col">
+                      <input type="text" class="form-control form-control-lg" placeholder="CPF" id="cpf-contact-footer" maxlength="14">
+                  </div>
+              </div>
+              <div class="row mt-10">
+                  <div class="col">
+                      <input type="text" class="form-control form-control-lg" placeholder="Telefone" id="telefone-contact-footer" maxlength="15">
+                  </div>
+              </div>
+              <div class="row mt-10">
+                  <div class="col">
+                      <select class="custom-select select2 select2-hidden-accessible" id="unidade-contact-footer" data-select2-id="select2-data-unidade-contact-footer" tabindex="-1" aria-hidden="true">
+                          <option value="" selected="" data-select2-id="select2-data-26-1hau">SELECIONE A UNIDADE</option>
+                          <option value="PG" data-select2-id="select2-data-31-mo15">Pós Graduação</option>
+                          <option value="RP" data-select2-id="select2-data-32-vhix">Ensino a Distância</option>
+                          <option value="SG" data-select2-id="select2-data-33-s4gm">Universidade São Gonçalo</option>
+                          <option value="NT" data-select2-id="select2-data-34-aq4x">Universidade Niterói</option>
+                          <option value="IT" data-select2-id="select2-data-35-gvrb">Universidade Itaipu</option>
+                          <option value="CP" data-select2-id="select2-data-36-mtva">Universidade Campos</option>
+                          <option value="SA" data-select2-id="select2-data-37-j0xi">Centro Universo Salvador</option>
+                          <option value="RE" data-select2-id="select2-data-38-2hit">Centro Universo Recife</option>
+                          <option value="JF" data-select2-id="select2-data-39-igbk">Centro Universo Juiz de Fora</option>
+                          <option value="GO" data-select2-id="select2-data-40-dmi5">Centro Universo Goiânia</option>
+                          <option value="BH" data-select2-id="select2-data-41-npmq">Centro Universo Belo Horizonte</option>
+                          <option value="DF" data-select2-id="select2-data-42-muna">Faculdade Universo Brasília</option>
+                      </select><span class="select2 select2-container select2-container--default select2-container--below select2-container--focus" dir="ltr" data-select2-id="select2-data-25-9sg7" style="width: 450px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-unidade-contact-footer-container" aria-controls="select2-unidade-contact-footer-container"><span class="select2-selection__rendered" id="select2-unidade-contact-footer-container" role="textbox" aria-readonly="true" title="SELECIONE A UNIDADE">SELECIONE A UNIDADE</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                  </div>
+              </div>
+              <div class="row mt-10">
+                  <div class="col">
+                      <input type="text" class="form-control form-control-lg" placeholder="Assunto" id="assunto-contact-footer">
+                  </div>
+              </div>
+              <div class="row mt-2">
+                  <div class="col">
+                      <textarea class="form-control" placeholder="Mensagem" id="mensagem-contact-footer" rows="3"></textarea>
+                  </div>
+              </div>
+              <div class="form-group mt-20">
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheckAcceptFaleSubscribe">
+                      <label class="form-check-label aceite-form-inscricao" for="gridCheckAcceptFaleSubscribe">
+                          Concordo em receber informações e novidades via Whatsapp, SMS ou E-mail.
+                      </label>
+                  </div>
+              </div>
+              <div class="row mt-2">
+                  <div class="col" id="btn-submit-contact-footer">
+                      <button type="button" class="btn btn-success btn-lg btn-block" id="btn-enviar-contact-footer">ENVIAR!</button>
+                  </div>
+              </div>
 
+          </form>
+      </div>
+  </div>
+</footer>
+-->
+
+</div>
 <!--whatsapp-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <a href="https://wa.me/5571986384879?text=Sou%20Candidato%20!!!" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
